@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -410,9 +411,6 @@
     <Content Include="Template\vendor\flot\jquery.js" />
     <Content Include="Template\vendor\font-awesome\css\font-awesome.css" />
     <Content Include="Template\vendor\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Template\vendor\jquery-easing\jquery.easing.compatibility.js" />
-    <Content Include="Template\vendor\jquery-easing\jquery.easing.js" />
-    <Content Include="Template\vendor\jquery-easing\jquery.easing.min.js" />
     <Content Include="Template\vendor\jquery\jquery.js" />
     <Content Include="Template\vendor\jquery\jquery.min.js" />
     <Content Include="Template\vendor\metisMenu\metisMenu.css" />
@@ -544,8 +542,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Log\" />
     <Folder Include="EntityModels\" />
     <Folder Include="ErrorLog\" />
+    <Folder Include="Template\vendor\jquery-easing\" />
     <Folder Include="Views\TimeSheetMaster\" />
   </ItemGroup>
   <ItemGroup>
